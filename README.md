@@ -1,5 +1,8 @@
 # Audi
 
+[![GitHub pull-requests-audi](https://img.shields.io/github/issues-pr/aarzh-aaronzhang/audi.svg)](https://github.com/aarzh-AaronZhang/Audi/pulls/)
+
+
 ## **This is car building project** 
 
 1. glass
