@@ -1,0 +1,20 @@
+# This is a basic workflow to help you get started with Actions
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  issue_comment:
+    types: [created, edited]
+name: Invite a contributor
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  invite-contributor:
+    name: prepare invite for new contributor
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: invite-contributor
+      uses: ./action
+      env:
+        GITHUB_TOKEN: ${{ secrets.BDOUGIE_TOKEN }}
